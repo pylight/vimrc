@@ -1,7 +1,7 @@
 #!/bin/sh
-cd ..
+
+cd ~
 ln -s .vim/vimrc .vimrc
-ln -s .vim/gvimrc .gvimrc
 
 # xmledit
 cd .vim/bundle/xmledit/ftplugin/

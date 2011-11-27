@@ -1,9 +1,7 @@
-" vgod's vimrc
-" Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
-" Fork me on GITHUB  https://github.com/vgod/vimrc
-
-" read https://github.com/vgod/vimrc/blob/master/README.md for more info
-
+" pylight's vimrc!
+"
+" forked from (awesome work, thx!):
+" vgod's vimrc <https://pylight@github.com/pylight/vimrc.git>
 
 " For pathogen.vim: auto load all plugins in .vim/bundle
 call pathogen#runtime_append_all_bundles()
@@ -30,16 +28,9 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 syntax on		" syntax highlight
 set hlsearch		" search highlighting
 
-if has("gui_running")	" GUI color and font settings
-  set guifont=Osaka-Mono:h20
-  set background=dark 
-  set t_Co=256          " 256 color mode
-  set cursorline        " highlight current line
-  colors moria
-else
 " terminal color settings
-  colors vgod
-endif
+" default: 
+" colors  moria
 
 set clipboard=unnamed	" yank to the system register (*) by default
 set showmatch		" Cursor shows matching ) and }
@@ -194,14 +185,11 @@ cmap cd. lcd %:p:h
 " PROGRAMMING SHORTCUTS
 "--------------------------------------------------------------------------- 
 
-" Ctrl-[ jump out of the tag stack (undo Ctrl-])
-map <C-[> <ESC>:po<CR>
-
 " ,g generates the header guard
 map <leader>g :call IncludeGuard()<CR>
 fun! IncludeGuard()
    let basename = substitute(bufname(""), '.*/', '', '')
-   let guard = '_' . substitute(toupper(basename), '\.', '_', "H")
+   let guard = substitute(toupper(basename), '\.', '_', "H")
    call append(0, "#ifndef " . guard)
    call append(1, "#define " . guard)
    call append( line("$"), "#endif // for #ifndef " . guard)
@@ -275,23 +263,6 @@ let g:tex_flavor='latex'
 "}
 
 
-" --- AutoClose - Inserts matching bracket, paren, brace or quote 
-" fixed the arrow key problems caused by AutoClose
-if !has("gui_running")	
-   set term=linux
-   imap OA <ESC>ki
-   imap OB <ESC>ji
-   imap OC <ESC>li
-   imap OD <ESC>hi
-
-   nmap OA k
-   nmap OB j
-   nmap OC l
-   nmap OD h
-endif
-
-
-
 " --- Command-T
 let g:CommandTMaxHeight = 15
 
@@ -306,7 +277,7 @@ hi link EasyMotionShade  Comment
 
 " --- TagBar
 " toggle TagBar with F7
-nnoremap <silent> <F7> :TagbarToggle<CR> 
+nnoremap <silent> <F19> :TagbarToggle<CR> 
 " set focus to TagBar when opening it
 let g:tagbar_autofocus = 1
 
