@@ -1,31 +1,19 @@
-vgod's vimrc
+pylight's vimrc
 ============
-Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+* Author: Sven K. (https://github.com/pylight/vimrc)
+* Description: Yes! This is a vim configuration! =)
+* Info: Forked from  https://github.com/vgod/vimrc. (awesome work, ty!)
 
-Fork me on GITHUB  https://github.com/vgod/vimrc.
-
-ONE-STEP INSTALL
-----------------
-
-Use curl (for Mac OS X):
-
-     curl -o - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
-
-or wget (for most UNIX platforms):
-
-     wget -O - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
-
-
-MANUALLY INSTALL
+INSTALL
 ----------------
 
 1. Check out from github
 
-        git clone git://github.com/vgod/vimrc.git ~/.vim
+        git clone git://github.com/pylight/vimrc.git ~/.vim
         cd ~/.vim
         git submodule update --init
 
-2. Install ~/.vimrc and ~/.gvimrc
+2. Install ~/.vimrc
 
         ./install-vimrc.sh
 
@@ -35,22 +23,6 @@ MANUALLY INSTALL
         ruby extconf.rb
         make
 
-MANUALLY INSTALL ON WINDOWS
----------------------------
-
-1. Check out from github
-
-        cd C:\Program Files\Vim   (or your installed path to Vim)
-        rmdir /s vimfiles         (This deletes your old vim configurations. If you want to keep it, use move instead of rmdir.)
-        git clone git://github.com/vgod/vimrc.git vimfiles
-        git submodule update --init
-
-2. Install vimrc. Add the following line at the end of C:\Program Files\Vim\vimrc.
-
-        source $VIM/vimfiles/vimrc
-
-
-  
 INSTALL & UPGRADE PLUGIN BUNDLES
 --------------------------------
 
@@ -135,6 +107,6 @@ Language specific supports
 
 Other good references
 ---------------------
-
+English:
 * http://amix.dk/vim/vimrc.html
 * http://spf13.com/post/perfect-vimrc-vim-config-file
