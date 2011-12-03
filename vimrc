@@ -262,10 +262,6 @@ let g:tex_flavor='latex'
 
 "}
 
-
-" --- Command-T
-let g:CommandTMaxHeight = 15
-
 " --- SuperTab
 let g:SuperTabDefaultCompletionType = "context"
 

@@ -3,7 +3,7 @@ pylight's vimrc
 * Author: Sven K.
 * Description: Yes! This is a vim configuration! =)
 * Github: https://github.com/pylight/vimrc
-* Forked from  https://github.com/vgod/vimrc. (awesome work, ty!)
+* Forked from  [vgod](https://github.com/vgod/vimrc). (awesome work, ty!)
 
 INSTALL
 ----------------
@@ -18,19 +18,13 @@ INSTALL
 
         ./install-vimrc.sh
 
-3. (Optional, if you want Command-T) Compile the Command-T plugin
-
-        cd .vim/bundle/command-t/ruby/command-t
-        ruby extconf.rb
-        make
-
 INSTALL & UPGRADE PLUGIN BUNDLES
 --------------------------------
 
 All plugins (except vim-latex) were checked out as git submodules, 
-which can be upgraded with `git pull`. For example, to upgrade Command-T 
+which can be upgraded with `git pull`. For example, to upgrade Nerdtree 
 
-     cd ~/.vim/bundle/command-t
+     cd ~/.vim/bundle/nerdtree
      git pull
 
 To install a new plugin as a git submoudle, type the followin commands.
@@ -62,20 +56,12 @@ PLUGINS
 
 * [xmledit](http://www.vim.org/scripts/script.php?script_id=301): XML/HTML tags will be completed automatically.
 
-* [Command-T](https://github.com/wincent/Command-T): open and navigate between files with `cmd-t`.
-  
 * [SuperTab](http://www.vim.org/scripts/script.php?script_id=1643): Do all your insert-mode completion with Tab.
 
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540): TextMate-style snippets for Vim
 
   `:help snipMate` to see more info.
 
-* [YankRing](http://www.vim.org/scripts/script.php?script_id=1234): Maintains a history of previous yanks, changes and deletes 
-  
-  `:help yankring` to see more info.
-
-* [VisIncr](http://www.vim.org/scripts/script.php?script_id=670): Produce increasing/decreasing columns of numbers, dates, or daynames.
-  
 * [Cute Error Marker](http://www.vim.org/scripts/script.php?script_id=2653): showing error and warning icons on line.
   
    MacVim users need to enable "Use experimental renderer" to see
@@ -87,16 +73,11 @@ PLUGINS
 
 * [JavaComplete](http://www.vim.org/scripts/script.php?script_id=1785): Java Omni-completion.
 
-* [EasyMotion](https://github.com/Lokaltog/vim-easymotion): An easy way to jump to a word.
+* [EasyMotion](https://github.com/Lokaltog/vim-easymotion): An easy way to jump to a word. (live search)
 
   Useful commands:
     * `,w` forward EasyMotion
     * `,b` backward EasyMotion
-
-* [TagBar](http://majutsushi.github.com/tagbar/): browsing the tags of source files ordered by classes.
-
-  Useful commands:
-    * `F7` toggles the TagBar
 
 Language specific supports
 --------------------------
@@ -108,6 +89,6 @@ Language specific supports
 
 Other good references
 ---------------------
-English:
+
 * http://amix.dk/vim/vimrc.html
 * http://spf13.com/post/perfect-vimrc-vim-config-file
