@@ -1,8 +1,9 @@
 pylight's vimrc
 ============
-* Author: Sven K. (https://github.com/pylight/vimrc)
+* Author: Sven K.
 * Description: Yes! This is a vim configuration! =)
-* Info: Forked from  https://github.com/vgod/vimrc. (awesome work, ty!)
+* Github: https://github.com/pylight/vimrc
+* Forked from  https://github.com/vgod/vimrc. (awesome work, ty!)
 
 INSTALL
 ----------------
