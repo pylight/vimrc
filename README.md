@@ -18,8 +18,8 @@ INSTALL
 
         ./install-vimrc.sh
 
-INSTALL & UPGRADE PLUGIN BUNDLES
---------------------------------
+UPGRADE PLUGIN BUNDLES
+----------------------
 
 All plugins (except vim-latex) were checked out as git submodules, 
 which can be upgraded with `git pull`. For example, to upgrade Nerdtree 
