@@ -15,7 +15,6 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set autoread		" auto read when file is changed from outside
 
-
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
@@ -30,7 +29,9 @@ set hlsearch		" search highlighting
 
 " terminal color settings
 " default: 
-" colors  moria
+set background=dark
+set t_Co=256
+colors solarized 
 
 set clipboard=unnamed	" yank to the system register (*) by default
 set showmatch		" Cursor shows matching ) and }
@@ -153,8 +154,11 @@ cnoremap <C-A>      <Home>
 cnoremap <C-E>      <End>
 cnoremap <C-K>      <C-U>
 
-" ,p toggles paste mode
-nmap <leader>p :set paste!<BAR>set paste?<CR>
+" <F2> toggles paste mode
+nmap <F2> :set paste!<BAR>set paste?<CR>
+
+" <F3> toggles line number display
+nmap <F3> :set number!<BAR>set number?<CR>
 
 " allow multiple indentation/deindentation in visual mode
 vnoremap < <gv
@@ -270,11 +274,14 @@ let g:SuperTabDefaultCompletionType = "context"
 hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade  Comment
 
-
 " --- TagBar
 " toggle TagBar with F7
 nnoremap <silent> <F19> :TagbarToggle<CR> 
 " set focus to TagBar when opening it
 let g:tagbar_autofocus = 1
 
+" show line numbers
+set number
 
+" disable creation of .netrwhist
+let g:netrw_dirhistmax=0
