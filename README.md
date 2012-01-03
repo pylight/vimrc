@@ -52,8 +52,6 @@ PLUGINS
 
 * [vim-surround](https://github.com/tpope/vim-surround/blob/master/doc/surround.txt): deal with pairs of surroundings.
 
-* [matchit](http://www.vim.org/scripts/script.php?script_id=39): extended % matching for HTML, LaTeX, and many other languages. 
-
 * [xmledit](http://www.vim.org/scripts/script.php?script_id=301): XML/HTML tags will be completed automatically.
 
 * [SuperTab](http://www.vim.org/scripts/script.php?script_id=1643): Do all your insert-mode completion with Tab.
@@ -61,11 +59,6 @@ PLUGINS
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540): TextMate-style snippets for Vim
 
   `:help snipMate` to see more info.
-
-* [Cute Error Marker](http://www.vim.org/scripts/script.php?script_id=2653): showing error and warning icons on line.
-  
-   MacVim users need to enable "Use experimental renderer" to see
-   graphical icons.
 
 * [vim-latex](http://vim-latex.sourceforge.net/): Latex support.
 
