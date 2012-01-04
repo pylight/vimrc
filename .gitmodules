@@ -28,3 +28,9 @@
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/SudoEdit"]
+	path = bundle/SudoEdit
+	url = https://github.com/chrisbra/SudoEdit.vim
+[submodule "vim-fugitive"]
+	path = vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
