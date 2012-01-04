@@ -31,6 +31,6 @@
 [submodule "bundle/SudoEdit"]
 	path = bundle/SudoEdit
 	url = https://github.com/chrisbra/SudoEdit.vim
-[submodule "vim-fugitive"]
-	path = vim-fugitive
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
