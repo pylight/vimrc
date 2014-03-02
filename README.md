@@ -40,25 +40,15 @@ see the "USEFUL SHORTCUTS" section in vimrc to learn my shortcuts.
 PLUGINS
 -------
 
-* [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332): Pathogen let us install a plugin as a bundle in ~/.vim/bundle seprately.
+* [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332): easy plugin detection in ~/.vim/bludle/ dir.
 
-* [Nerd Tree](http://www.vim.org/scripts/script.php?script_id=1658): A tree explorer plugin for navigating the filesystem.
+* [Nerd Tree](http://www.vim.org/scripts/script.php?script_id=1658): better tree explorer plugin.
 
   Useful commands:
     * `:Bookmark [name]` - bookmark any directory as name
     * `:NERDTree [name]` - open the bookmark [name] in Nerd Tree
 
-* [AutoClose](http://www.vim.org/scripts/script.php?script_id=1849):  Inserts matching bracket, paren, brace or quote.
-
-* [vim-surround](https://github.com/tpope/vim-surround/blob/master/doc/surround.txt): deal with pairs of surroundings.
-
 * [xmledit](http://www.vim.org/scripts/script.php?script_id=301): XML/HTML tags will be completed automatically.
-
-* [SuperTab](http://www.vim.org/scripts/script.php?script_id=1643): Do all your insert-mode completion with Tab.
-
-* [snipMate](http://www.vim.org/scripts/script.php?script_id=2540): TextMate-style snippets for Vim
-
-  `:help snipMate` to see more info.
 
 * [vim-latex](http://vim-latex.sourceforge.net/): Latex support.
 
@@ -71,6 +61,8 @@ PLUGINS
   Useful commands:
     * `,w` forward EasyMotion
     * `,b` backward EasyMotion
+
+* [fugitive.vim](https://github.com/tpope/vim-fugitive): git wrapper for vim
 
 Language specific supports
 --------------------------
